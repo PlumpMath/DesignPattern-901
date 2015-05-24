@@ -160,9 +160,9 @@ namespace NameFactory
 		}
 
 		private void btCompute_Click(object sender, System.EventArgs e) {
-			Namer nm = nameFact.getName (txName.Text );
-			txFirst.Text = nm.getFrname ();
-			txLast.Text = nm.getLname ();
+			Namer nm = nameFact.GetName (txName.Text );
+            txFirst.Text = nm.GetFirstName();
+			txLast.Text = nm.GetLastName ();
 		}
 	}
 }
