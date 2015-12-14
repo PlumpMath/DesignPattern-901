@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational Pattern", "Creational Pattern", "{43C50934-4A60-4938-9381-26CC16526BED}"
 EndProject
@@ -31,6 +31,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalSpooler", "Creational Pattern\Singleton\GlobalSpooler\GlobalSpooler.csproj", "{A114F4F3-DF9B-46C6-8857-8FC2DA0300D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleSpooler", "Creational Pattern\Singleton\SingleSpooler\SingleSpooler.csproj", "{C7FA3292-3499-4D19-9494-C038A9C83D99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{06A3C572-7381-485F-8AF5-F8722585CCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +98,22 @@ Global
 		{C7FA3292-3499-4D19-9494-C038A9C83D99}.Release|ARM.ActiveCfg = Release|Any CPU
 		{C7FA3292-3499-4D19-9494-C038A9C83D99}.Release|x64.ActiveCfg = Release|Any CPU
 		{C7FA3292-3499-4D19-9494-C038A9C83D99}.Release|x86.ActiveCfg = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|ARM.Build.0 = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|x64.Build.0 = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,5 +128,7 @@ Global
 		{7AFB2775-C713-4F7D-AB5F-42143B868418} = {43C50934-4A60-4938-9381-26CC16526BED}
 		{A114F4F3-DF9B-46C6-8857-8FC2DA0300D5} = {7AFB2775-C713-4F7D-AB5F-42143B868418}
 		{C7FA3292-3499-4D19-9494-C038A9C83D99} = {7AFB2775-C713-4F7D-AB5F-42143B868418}
+		{06A3C572-7381-485F-8AF5-F8722585CCDB} = {2E3D821C-7372-4311-8211-3B21DF27BC49}
+		{5BB4A496-B759-4D7B-9D7F-E6A3C95F2FBA} = {06A3C572-7381-485F-8AF5-F8722585CCDB}
 	EndGlobalSection
 EndGlobal
