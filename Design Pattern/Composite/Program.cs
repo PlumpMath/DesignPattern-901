@@ -5,7 +5,7 @@ namespace Composite
     /// <summary>
     /// 1. "lowest common denominator"
     /// </summary>
-    internal interface Component
+    internal interface IComponent
     {
         void Traverse();
     }
@@ -13,46 +13,46 @@ namespace Composite
     /// <summary>
     /// 2. "Is a" relationship
     /// </summary>
-    internal class Primitive : Component
+    internal class Primitive : IComponent
     {
-        private int value;
+        private readonly int _value;
 
         public Primitive(int val)
         {
-            value = val;
+            _value = val;
         }
 
         public void Traverse()
         {
-            Console.WriteLine(value + "  ");
+            Console.WriteLine(_value + "  ");
         }
     }
 
     /// <summary>
     /// 2. "has a" relationship
     /// </summary>
-    internal abstract class Composite : Component
+    internal abstract class Composite : IComponent
     {
-        private Component[] children = new Component[9];  // 3. Couple to interface Component
-        private int total = 0;
-        private int value;
+        private readonly IComponent[] _children = new IComponent[9];  // 3. Couple to interface IComponent
+        private int _total = 0;
+        private readonly int _value;
 
         internal Composite(int val)
         {
-            value = val;
+            _value = val;
         }
 
-        public void Add(Component c)// 3. Couple to interface
+        public void Add(IComponent c)// 3. Couple to interface
         {
-            children[total++] = c;
+            _children[_total++] = c;
         }
 
         public virtual void Traverse()
         {
-            Console.WriteLine(value + "  ");
-            for (var i = 0; i < total; i++)
+            Console.WriteLine(_value + "  ");
+            for (var i = 0; i < _total; i++)
             {
-                children[i].Traverse(); // 4. Delegation and polymorphism
+                _children[i].Traverse(); // 4. Delegation and polymorphism
             }
         }
     }
