@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Threading;
 using static System.Console;
 
@@ -32,6 +31,7 @@ namespace Mediator
     {
         // 4. The Mediator arbitrates
         private bool _slotFull;
+
         private readonly object _producerLock = new object();
         private readonly object _consumerLock = new object();
 
