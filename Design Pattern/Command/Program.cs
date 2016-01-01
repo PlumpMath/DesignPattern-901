@@ -59,7 +59,10 @@ namespace Command
         public object Execute()
         {
             // in C++, you do something like --- return _receiver->_action( _args );
-            try { return _action.Invoke(_receiver, _args); }
+            try
+            {
+                return _action.Invoke(_receiver, _args);
+            }
             catch (Exception e) { WriteLine(e); }
             return null;
         }
